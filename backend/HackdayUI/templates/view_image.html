@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <img src="/media/{{ image.image }}" usemap="#imageMap">
+    <map name="imageMap">
+        {% for metadata in metadatas %}
+            <area shape="rect" coords="{{ metadata.x1 }},{{ metadata.y1 }},{{ metadata.x2 }},{{ metadata.y2 }}"
+                  href="/media/sound/{{ metadata.sound }}">
+        {% endfor %}
+    </map>
+{% endblock %}
