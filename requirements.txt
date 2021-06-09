@@ -1,6 +1,6 @@
 boto3==1.9.142
 botocore==1.12.142
-Django==2.2.18
+Django==2.2.22
 docutils==0.14
 jmespath==0.9.4
 Pillow==8.1.1
